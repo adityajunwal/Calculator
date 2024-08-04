@@ -1,0 +1,126 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    max-width: 700px;
+}
+
+#display {
+    color: white;
+    font-weight: bolder;
+    padding: 25px;
+    margin-bottom: 30px;
+    width: auto;
+    overflow: hidden;
+    font-size: 3rem;
+    border: none;
+    background-color: rgb(60, 60, 60);
+    text-align: right;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-weight: bolder;
+    color: white;
+    font-size: 2em;
+    height: 100px;
+    width: 100px;
+    border: none;
+    margin: 15px;
+    background-color: #d8863b;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3b479;
+}
+
+.numkeys {
+    background-color: rgb(80, 78, 78);
+}
+
+.numkeys:hover {
+    background-color: rgb(151, 145, 145);
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+#history {
+    margin-top: 50px;
+    height: inherit;
+    width: auto;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#history-display {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: none;
+    z-index: 1;
+    height: 100%;
+    width: 700px;
+}
+
+#cross {
+    color: black;
+    background-color: whitesmoke;
+    right: 0px;
+}
+
+#history-list {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#history-tab {
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 80%;
+    background-color: lightblue;
+    display: flex;
+    font-size: 3em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+#history-add{
+    font-size: 0.5em;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}

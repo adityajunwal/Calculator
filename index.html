@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input id="display" type="text" value="0" readonly>
+        <div class="keypad">
+            <button onclick="addChar('(')">(</button>
+            <button onclick="addChar(')')">)</button>
+            <button onclick="backspace()">&larr;</button>
+            <button onclick="addChar('+')">+</button>
+            <button onclick="addChar('7')" class="numkeys">7</button>
+            <button onclick="addChar('8')" class="numkeys">8</button>
+            <button onclick="addChar('9')" class="numkeys">9</button>
+            <button onclick="addChar('-')">-</button>
+            <button onclick="addChar('4')" class="numkeys">4</button>
+            <button onclick="addChar('5')" class="numkeys">5</button>
+            <button onclick="addChar('6')" class="numkeys">6</button>
+            <button onclick="addChar('*')">*</button>
+            <button onclick="addChar('1')" class="numkeys">1</button>
+            <button onclick="addChar('2')" class="numkeys">2</button>
+            <button onclick="addChar('3')" class="numkeys">3</button>
+            <button onclick="addChar('/')">/</button>
+            <button onclick="addChar('.')">.</button>
+            <button onclick="addChar('0')" class="numkeys">0</button>
+            <button onclick="clearScreen()">C</button>
+            <button onclick="calculate()">=</button>
+        </div>
+        <button class="numkeys" id="history" onclick="displayHistory()">HISTORY</button>
+    </div>
+
+    <div id="history-display">
+        <button id="cross" onclick="hideHistory()">&#10006;</button>
+        <div id="history-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
